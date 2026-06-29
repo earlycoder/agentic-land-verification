@@ -10,7 +10,7 @@ Challenges include:
 - Risk of fraud due to duplicate survey numbers or hidden encumbrances.
 - Limited internet access in small towns, making online verification unreliable.
 
-**Impact:** 
+**## Impact:** 
 
 Buyers struggle to confidently establish ownership, track changes, and ensure compliance with government regulations, leading to disputes or financial loss.
 
@@ -26,7 +26,7 @@ This project proposes an **Agentic AI workflow** that:
 - Generates buyer-friendly reports for legal and financial use.
 
 ---
-** ## Use Case Flow**
+**## Use Case Flow**
 1. Buyer scans land documents.  
 2. AI extracts identifiers and validates consistency offline.  
 3. AI provides offline guidance using cached knowledge packs.  
