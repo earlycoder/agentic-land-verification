@@ -2,6 +2,7 @@
 Offline-first Agentic AI for secure land ownership verification
 
 **## Problem Statement**
+
 First-time buyers of residential land face fragmented and opaque documentation processes.  
 Challenges include:
 - Frequent changes in mutation records, encumbrance certificates, and zoning classifications.
@@ -9,11 +10,14 @@ Challenges include:
 - Risk of fraud due to duplicate survey numbers or hidden encumbrances.
 - Limited internet access in small towns, making online verification unreliable.
 
-**Impact:** Buyers struggle to confidently establish ownership, track changes, and ensure compliance with government regulations, leading to disputes or financial loss.
+**Impact:** 
+
+Buyers struggle to confidently establish ownership, track changes, and ensure compliance with government regulations, leading to disputes or financial loss.
 
 ---
 
 **## Solution Overview**
+
 This project proposes an **Agentic AI workflow** that:
 - Extracts and validates key identifiers (Survey Number, Khata Number, ULPIN).
 - Provides offline-first consistency checks across documents.
