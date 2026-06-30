@@ -1,4 +1,4 @@
-# agentic-land-verification
+# Agentic-Land-Verification
 Offline-first Agentic AI for secure land ownership verification
 
 **>> Problem Statement <<**
@@ -32,4 +32,16 @@ This project proposes an **Agentic AI workflow** that:
 3. AI provides offline guidance using cached knowledge packs.  
 4. When internet is available, AI syncs with government portals.  
 5. AI tracks changes and alerts buyer of risks.  
-6. Buyer dashboard shows verified identifiers, pending checks, and last sync date.  
+6. Buyer dashboard shows verified identifiers, pending checks, and last sync date.
+
+ **>> Project Structure - Azure and Open-Source Stack <<**
+---------------------------------------------------------------------------------------------------------------------
+| Layer               | Azure Stack                                      | Open‑Source Stack                        |
+| -------------------------------------------------------------------------------------------------------------------
+| Document Ingestion  | Azure Blob Storage, Azure Form Recognizer        | Local Storage / S3, Tesseract OCR        |
+| Preprocessing       | Azure Cognitive Services, Azure Cognitive Search | spaCy / NLTK, FAISS / Pinecone           |
+| Agentic AI Layer    | Azure OpenAI, Azure Functions                    | LangChain / LlamaIndex, Llama 3 / GPT‑4  |
+| API & Integration   | Azure API Management, Azure AD / App Insights    | FastAPI / Flask, OAuth / Grafana         |
+| Deploy & Monitoring | Azure DevOps CI/CD, Application Insights         | Docker / Kubernetes, Prometheus / Grafana|
+---------------------------------------------------------------------------------------------------------------------
+ 
