@@ -27,6 +27,7 @@ This project proposes an **Agentic AI workflow** that:
 
 ---
 **>> Use Case Flow <<**
+
 1. Buyer scans land documents.  
 2. AI extracts identifiers and validates consistency offline.  
 3. AI provides offline guidance using cached knowledge packs.  
@@ -35,5 +36,8 @@ This project proposes an **Agentic AI workflow** that:
 6. Buyer dashboard shows verified identifiers, pending checks, and last sync date.
 
  **>> Project Structure - Azure and Open-Source Stack <<**
+
+ <img width="548" height="265" alt="Screenshot 2026-06-30 200304" src="https://github.com/user-attachments/assets/99b98a8f-2a11-41be-a0d8-c96d049e4d96" />
+
 
  
