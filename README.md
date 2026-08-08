@@ -1,8 +1,7 @@
-# Agentic-Land-Verification
-Offline-first Agentic AI for secure land ownership verification
+# LexVerify 
+**Offline-first, multilingual document validation pipeline with local LLM semantic verification**
 
-**>> Problem Statement <<**
-
+**1. Problem Statement **
 First-time buyers of residential land face fragmented and opaque documentation processes.  
 Challenges include:
 - Frequent changes in mutation records, encumbrance certificates, and zoning classifications.
@@ -10,34 +9,39 @@ Challenges include:
 - Risk of fraud due to duplicate survey numbers or hidden encumbrances.
 - Limited internet access in small towns, making online verification unreliable.
 
-**>> Impact <<** 
-
+**2. Impact ** 
 Buyers struggle to confidently establish ownership, track changes, and ensure compliance with government regulations, leading to disputes or financial loss.
 
----
+**3. LexVerify Overview **
+LexVerify validates Indian property **Sale Deeds** against the essential legal elements a valid deed must contain. It accepts `.docx`, `.pdf`, `.png`, and `.jpg`, extracts text (structured parse or on-device OCR), checks every mandatory
+clause, and produces three outputs: a console summary, a structured JSON report, and an HTML report.
 
-**>> Solution Overview <<**
+The system currently reads **English and 20 Indian Languages**, detecting the language automatically and applying the right vocabulary without user configuration.
 
-This project proposes an **Agentic AI workflow** that:
-- Extracts and validates key identifiers (Survey Number, Khata Number, ULPIN).
-- Provides offline-first consistency checks across documents.
-- Syncs with government portals when internet is available.
-- Tracks changes in ownership, encumbrances, and zoning.
-- Generates buyer-friendly reports for legal and financial use.
+Two constraints shape the entire architecture:-
 
----
-**>> Use Case Flow <<**
+**Nothing leaves the machine.** No cloud service, no API key, no telemetry. OCR runs locally through Tesseract; semantic verification runs locally through Ollama. The tool works on an air-gapped laptop which matters for documents carrying PAN
+numbers, Aadhaar numbers, and residential addresses.
 
-1. Buyer scans land documents.  
-2. AI extracts identifiers and validates consistency offline.  
-3. AI provides offline guidance using cached knowledge packs.  
-4. When internet is available, AI syncs with government portals.  
-5. AI tracks changes and alerts buyer of risks.  
-6. Buyer dashboard shows verified identifiers, pending checks, and last sync date.
+**Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
 
- **>> Project Structure - Azure and Open-Source Stack <<**
+**4. Implementation Status **
+| Component | Status |
+|---|---|
+| Ingestion (loader, preprocessing, OCR, confidence) | ✅ Built |
+| Clause validation (12 clauses, sub-items, tiering) | ✅ Built |
+| Computed checks (amount, boundaries, stamp duty, cheque) | ✅ Built |
+| English support | ✅ Built |
+| Tamil support (packs, numbers, directions, warnings) | ✅ Built |
+| HTML report + complex-script handling | ✅ Built |
+| Orchestration, JSON report, console output | ✅ Built |
+| CLI + FastAPI web UI | ✅ Built |
+| Extraction / Title & Zoning as separate agents | 🔀 Merged into `validation_agent.py` |
+| Online-Verification agent | 🟡 Designed |
+| Reporting agent | 🟡 Designed |
+| Evaluation harness | 🚧 In-progress `golden_dataset.json |
+| Cross-document verification (Deed vs EC vs RTC) | 🟡 Designed |
 
- <img width="548" height="265" alt="Screenshot 2026-06-30 200304" src="https://github.com/user-attachments/assets/99b98a8f-2a11-41be-a0d8-c96d049e4d96" />
 
 **>>Source Code following soon ........<<**
  
