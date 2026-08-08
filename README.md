@@ -1,7 +1,7 @@
 # LexVerify 
 **Offline-first, multilingual document validation pipeline with local LLM semantic verification**
 
-#1. Problem Statement 
+**1. Problem Statement**
 
 First-time buyers of residential land face fragmented and opaque documentation processes.  
 Challenges include:
