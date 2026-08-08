@@ -10,11 +10,11 @@ Challenges include:
 - Risk of fraud due to duplicate survey numbers or hidden encumbrances.
 - Limited internet access in small towns, making online verification unreliable.
 
-#2. Impact 
+**2. Impact** 
 
 Buyers struggle to confidently establish ownership, track changes, and ensure compliance with government regulations, leading to disputes or financial loss.
 
-#3. LexVerify Overview 
+**3. LexVerify Overview** 
 
 LexVerify validates Indian property **Sale Deeds** against the essential legal elements a valid deed must contain. It accepts `.docx`, `.pdf`, `.png`, and `.jpg`, extracts text (structured parse or on-device OCR), checks every mandatory
 clause, and produces three outputs: a console summary, a structured JSON report, and an HTML report.
@@ -28,7 +28,7 @@ numbers, Aadhaar numbers, and residential addresses.
 
 **Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
 
-#4. Implementation Status 
+**4. Implementation Status** 
 
 | Component | Status |
 |---|---|
