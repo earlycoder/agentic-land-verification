@@ -29,7 +29,9 @@ numbers, Aadhaar numbers, and residential addresses.
 **Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
 
 **4. Tech Stack**
+
 **4.1 Python packages**
+
   python-docx          .docx parsing (paragraphs and tables)
   PyMuPDF              PDF text-layer detection — scanned vs native
   pdf2image            PDF page rasterization (requires Poppler)
@@ -42,8 +44,8 @@ numbers, Aadhaar numbers, and residential addresses.
   requests             Ollama HTTP calls
 
 **4.2 External Software**
+
 These are not pip-installable and must be installed separately.
-# Software Components
 
 | Software          | Purpose                          | Notes                                                                 |
 |-------------------|----------------------------------|----------------------------------------------------------------------|
@@ -52,7 +54,6 @@ These are not pip-installable and must be installed separately.
 | **Poppler**       | PDF to image conversion           | Windows: download binaries, add the `bin` folder to PATH.             |
 | **Ollama**        | Local LLM runtime                 | Listens on `127.0.0.1:11434`. Often auto-starts; a "port already in use" error means it is already running. |
 | **llama3.1:8b**   | The model itself                  | Pull once with: `ollama pull llama3.1:8b`                            |
-
 
 
 **5. Implementation Status** 
