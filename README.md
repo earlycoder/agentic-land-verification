@@ -43,15 +43,16 @@ numbers, Aadhaar numbers, and residential addresses.
 
 **4.2 External Software**
 These are not pip-installable and must be installed separately.
-Software	                      Purpose	                        Notes
-Tesseract OCR	          Text extraction from       Windows: use the UB Mannheim build. Add to PATH, or set
-                        scanned pages	             pytesseract.pytesseract.tesseract_cmd explicitly.
-Tamil trained data	     Tamil OCR	                 Required only for SCANNED Tamil documents. Place tam.traineddata in   
-                                                   Tesseract’s tessdata folder.
-Poppler	                PDF to image conversion	   Windows: download binaries, add the bin folder to PATH.
-Ollama	                 Local LLM runtime	         Listens on 127.0.0.1:11434. Often auto-starts; a "port already in use" 
-                                                   error means it is already running.
-llama3.1:8b	            The model itself	          Pull once with: ollama pull llama3.1:8b
+# Software Components
+
+| Software          | Purpose                          | Notes                                                                 |
+|-------------------|----------------------------------|----------------------------------------------------------------------|
+| **Tesseract OCR** | Text extraction from scanned pages | Windows: use the UB Mannheim build. Add to PATH, or set `pytesseract.pytesseract.tesseract_cmd` explicitly. |
+| **Tamil trained data** | Tamil OCR                     | Required only for SCANNED Tamil documents. Place `tam.traineddata` in Tesseract’s `tessdata` folder. |
+| **Poppler**       | PDF to image conversion           | Windows: download binaries, add the `bin` folder to PATH.             |
+| **Ollama**        | Local LLM runtime                 | Listens on `127.0.0.1:11434`. Often auto-starts; a "port already in use" error means it is already running. |
+| **llama3.1:8b**   | The model itself                  | Pull once with: `ollama pull llama3.1:8b`                            |
+
 
 
 **5. Implementation Status** 
