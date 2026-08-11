@@ -1,7 +1,7 @@
 # LexVerify 
 **Offline-first, multilingual document validation pipeline with local LLM semantic verification**
 
-**1. Problem Statement**
+## **1. Problem Statement**
 
 First-time buyers of residential land face fragmented and opaque documentation processes.  
 Challenges include:
@@ -10,11 +10,11 @@ Challenges include:
 - Risk of fraud due to duplicate survey numbers or hidden encumbrances.
 - Limited internet access in small towns, making online verification unreliable.
 
-**2. Impact** 
+## **2. Impact** 
 
 Buyers struggle to confidently establish ownership, track changes, and ensure compliance with government regulations, leading to disputes or financial loss.
 
-**3. LexVerify Overview** 
+## **3. LexVerify Overview** 
 
 LexVerify validates Indian property **Sale Deeds** against the essential legal elements a valid deed must contain. It accepts `.docx`, `.pdf`, `.png`, and `.jpg`, extracts text (structured parse or on-device OCR), checks every mandatory
 clause, and produces three outputs: a console summary, a structured JSON report, and an HTML report.
@@ -28,27 +28,27 @@ numbers, Aadhaar numbers, and residential addresses.
 
 **Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
 
-**4. Tech Stack**
+## **4. Tech Stack**
 
 **4.1 Python packages**
 
-##🔎 Document & OCR Stack
+### 🔎 Document & OCR Stack
 - **python-docx** → `.docx` parsing (paragraphs and tables)
 - **PyMuPDF** → PDF text-layer detection (scanned vs native)
 - **pdf2image** → PDF page rasterization (requires Poppler)
 - **pytesseract** → Tesseract binding for OCR
 - **Pillow** → Image preprocessing utilities
 
-##🌐 Web Application Layer
+### 🌐 Web Application Layer
 - **fastapi** → Web UI framework
 - **uvicorn** → ASGI server for FastAPI
 - **jinja2** → HTML templating for the web UI
 - **python-multipart** → File upload handling
 
-##🤖 AI Integration
+### 🤖 AI Integration
 - **requests** → HTTP calls to Ollama API
 
-**4.2 External Software**
+## **4.2 External Software**
 
 These are not pip-installable and must be installed separately.
 
@@ -61,7 +61,7 @@ These are not pip-installable and must be installed separately.
 | **llama3.1:8b**   | The model itself                  | Pull once with: `ollama pull llama3.1:8b`                            |
 
 
-**5. Implementation Status** 
+## **5. Implementation Status** 
 
 | Component | Status |
 |---|---|
