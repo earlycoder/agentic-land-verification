@@ -48,7 +48,7 @@ numbers, Aadhaar numbers, and residential addresses.
 ### 🤖 AI Integration
 - **requests** → HTTP calls to Ollama API
 
-## **4.2 External Software**
+**4.2 External Software**
 
 These are not pip-installable and must be installed separately.
 
