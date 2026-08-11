@@ -28,7 +28,33 @@ numbers, Aadhaar numbers, and residential addresses.
 
 **Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
 
-**4. Implementation Status** 
+**4. Tech Stack**
+**4.1 Python packages**
+  python-docx          .docx parsing (paragraphs and tables)
+  PyMuPDF              PDF text-layer detection — scanned vs native
+  pdf2image            PDF page rasterization (requires Poppler)
+  pytesseract          Tesseract binding
+  Pillow               Image preprocessing
+  fastapi              Web UI
+  uvicorn              ASGI server
+  jinja2               HTML templating for the web UI
+  python-multipart     File upload handling
+  requests             Ollama HTTP calls
+
+**4.2 External Software**
+These are not pip-installable and must be installed separately.
+Software	                      Purpose	                        Notes
+Tesseract OCR	          Text extraction from       Windows: use the UB Mannheim build. Add to PATH, or set
+                        scanned pages	             pytesseract.pytesseract.tesseract_cmd explicitly.
+Tamil trained data	     Tamil OCR	                 Required only for SCANNED Tamil documents. Place tam.traineddata in   
+                                                   Tesseract’s tessdata folder.
+Poppler	                PDF to image conversion	   Windows: download binaries, add the bin folder to PATH.
+Ollama	                 Local LLM runtime	         Listens on 127.0.0.1:11434. Often auto-starts; a "port already in use" 
+                                                   error means it is already running.
+llama3.1:8b	            The model itself	          Pull once with: ollama pull llama3.1:8b
+
+
+**5. Implementation Status** 
 
 | Component | Status |
 |---|---|
