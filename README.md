@@ -32,20 +32,20 @@ numbers, Aadhaar numbers, and residential addresses.
 
 **4.1 Python packages**
 
-🔎 Document & OCR Stack
+##🔎 Document & OCR Stack
 - **python-docx** → `.docx` parsing (paragraphs and tables)
 - **PyMuPDF** → PDF text-layer detection (scanned vs native)
 - **pdf2image** → PDF page rasterization (requires Poppler)
 - **pytesseract** → Tesseract binding for OCR
 - **Pillow** → Image preprocessing utilities
 
-🌐 Web Application Layer
+##🌐 Web Application Layer
 - **fastapi** → Web UI framework
 - **uvicorn** → ASGI server for FastAPI
 - **jinja2** → HTML templating for the web UI
 - **python-multipart** → File upload handling
 
-🤖 AI Integration
+##🤖 AI Integration
 - **requests** → HTTP calls to Ollama API
 
 **4.2 External Software**
