@@ -63,9 +63,13 @@ These are not pip-installable and must be installed separately.
 
 **4.3 Layered Architecture-- Baseline Verification Pipeline with Feedback Loops and Agentic AI Overlay**
 
-The diagram illustrates how the deterministic pipeline (OCR → Clause Identification → Rule‑Based Validation → Report Generation) interacts bidirectionally with the Document Ingestion & Preprocessing layer for error correction. The Agentic AI layer above—comprising Orchestrator, Reasoning, Error Recovery, and Compliance & Audit agents—adds adaptive workflow control, self‑correction, and auditability.
+The diagram illustrates how the deterministic pipeline (OCR → Clause Identification → Rule‑Based Validation → Report
+Generation) interacts bidirectionally with the Document Ingestion & Preprocessing layer for error correction. The Agentic 
+AI layer above—comprising Orchestrator, Reasoning, Error Recovery, and Compliance & Audit agents—adds adaptive workflow 
+control, self‑correction, and auditability.
 
-<img width="1536" height="1024" alt="LexVerify_Architecture" src="https://github.com/user-attachments/assets/c50f9ba9-1229-4788-8836-03df4cdaad1d" />
+<img width="1536" height="1024" alt="LexVerify_Architecture" src="https://github.com/user-attachments/assets/c50f9ba9-1229-
+ 4788-8836-03df4cdaad1d" />
 
 
 ## **5. Implementation Status** 
