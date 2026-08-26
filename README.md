@@ -29,7 +29,7 @@ numbers, Aadhaar numbers, and residential addresses.
 
 **Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
 
-**Project Management Areas**
+##**Project Management Areas**
 
 Personally, my passion to explore and learn new technologies works on these principles - BESTIE:
 
@@ -48,9 +48,6 @@ Personally, my passion to explore and learn new technologies works on these prin
 ### 5. Integrated Environment IE - 
     Merge the B, E, S, and T pillars [BEST] into one cohesive ecosystem, 
     Ensures all tools and teams work together smoothly
-
-### 5. Business - Ensure the project supports firm's growth, manages budget and timelines
-
 
 
 ## **4. Tech Stack**
