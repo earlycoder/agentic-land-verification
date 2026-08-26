@@ -27,7 +27,7 @@ Two constraints shape the entire architecture:-
 **Nothing leaves the machine.** No cloud service, no API key, no telemetry. OCR runs locally through Tesseract; semantic verification runs locally through Ollama. The tool works on an air-gapped laptop which matters for documents carrying PAN
 numbers, Aadhaar numbers, and residential addresses.
 
-**Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
+**Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project. Hybrid approach (Business rules-AI Agents)
 
 ## **~~~ Project Management Areas ~~~**
 
