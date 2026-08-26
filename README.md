@@ -29,7 +29,7 @@ numbers, Aadhaar numbers, and residential addresses.
 
 **Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
 
-##**Project Management Areas**
+## **Project Management Areas**
 
 Personally, my passion to explore and learn new technologies works on these principles - BESTIE:
 
