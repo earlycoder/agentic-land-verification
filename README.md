@@ -14,6 +14,7 @@ Challenges include:
 
 Buyers struggle to confidently establish ownership, track changes, and ensure compliance with government regulations, leading to disputes or financial loss.
 
+
 ## **3. LexVerify Overview** 
 
 LexVerify validates Indian property **Sale Deeds** against the essential legal elements a valid deed must contain. It accepts `.docx`, `.pdf`, `.png`, and `.jpg`, extracts text (structured parse or on-device OCR), checks every mandatory
@@ -27,6 +28,30 @@ Two constraints shape the entire architecture:-
 numbers, Aadhaar numbers, and residential addresses.
 
 **Deterministic parsing is authoritative; the language model assists but does not arbitrate.** This principle was learned from a concrete failure. It is the single most important design decision in the project.
+
+**Project Management Areas**
+
+Personally, my passion to explore and learn new technologies works on these principles - BESTIE:
+
+### 1. Business - 
+     Ensure the project supports firm's growth, manages budget and timelines
+
+### 2. Education - 
+     Focus on teaching people how to use the project, Ensures everyone understands the new system
+
+### 3. Security - 
+    Focus on safety and protecting data, Ensure compliance
+
+### 4. Technical - 
+    Focus on tools, codes, Build the actual software
+
+### 5. Integrated Environment IE - 
+    Merge the B, E, S, and T pillars [BEST] into one cohesive ecosystem, 
+    Ensures all tools and teams work together smoothly
+
+### 5. Business - Ensure the project supports firm's growth, manages budget and timelines
+
+
 
 ## **4. Tech Stack**
 
