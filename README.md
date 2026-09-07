@@ -1,4 +1,4 @@
-# DeeGuard 
+# DeedGuard 
 **Offline-first, multilingual document validation pipeline with local LLM semantic verification**
 
 ## **1. Problem Statement**
