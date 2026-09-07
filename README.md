@@ -1,4 +1,4 @@
-# LexVerify 
+# DeeGuard 
 **Offline-first, multilingual document validation pipeline with local LLM semantic verification**
 
 ## **1. Problem Statement**
@@ -15,9 +15,9 @@ Challenges include:
 Buyers struggle to confidently establish ownership, track changes, and ensure compliance with government regulations, leading to disputes or financial loss.
 
 
-## **3. LexVerify Overview** 
+## **3. DeedGuard Overview** 
 
-LexVerify validates Indian property **Sale Deeds** against the essential legal elements a valid deed must contain. It accepts `.docx`, `.pdf`, `.png`, and `.jpg`, extracts text (structured parse or on-device OCR), checks every mandatory
+DeedGuard validates Indian property **Sale Deeds** against the essential legal elements a valid deed must contain. It accepts `.docx`, `.pdf`, `.png`, and `.jpg`, extracts text (structured parse or on-device OCR), checks every mandatory
 clause, and produces three outputs: a console summary, a structured JSON report, and an HTML report.
 
 The system currently reads **English and 20 Indian Languages**, detecting the language automatically and applying the right vocabulary without user configuration.
